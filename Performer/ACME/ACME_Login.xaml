@@ -2,6 +2,7 @@
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
+  <sap:VirtualizedContainerService.HintSize>711,1223</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="52">
@@ -93,13 +94,13 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="724a4228-0a5f-4522-9b45-04e4a66745de" Version="V2">
+  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: ACME System 1 - Log In" sap:VirtualizedContainerService.HintSize="456,1158" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="724a4228-0a5f-4522-9b45-04e4a66745de" Version="V2">
     <uix:NApplicationCard.Body>
       <ActivityAction x:TypeArguments="x:Object">
         <ActivityAction.Argument>
           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
         </ActivityAction.Argument>
-        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="422,939" sap2010:WorkflowViewState.IdRef="Sequence_10">
+        <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="422,941" sap2010:WorkflowViewState.IdRef="Sequence_10">
           <Sequence.Variables>
             <Variable x:TypeArguments="x:String" Name="strUsername" />
             <Variable x:TypeArguments="ss:SecureString" Name="strPassword" />
@@ -111,9 +112,15 @@
           </sap:WorkflowViewStateService.ViewState>
           <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Framework\GetAppCredentials.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="360,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework\GetAppCredentials.xaml">
             <ui:InvokeWorkflowFile.Arguments>
-              <OutArgument x:TypeArguments="x:String" x:Key="out_Username">[strUsername]</OutArgument>
-              <InArgument x:TypeArguments="x:String" x:Key="in_Credential">[in_Config("ACME_Credential").ToString]</InArgument>
-              <OutArgument x:TypeArguments="ss:SecureString" x:Key="out_Password">[strPassword]</OutArgument>
+              <OutArgument x:TypeArguments="x:String" x:Key="out_Username">
+                <VisualBasicReference x:TypeArguments="x:String" ExpressionText="strUsername" />
+              </OutArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="in_Credential">
+                <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;ACME_Credential&quot;).ToString" />
+              </InArgument>
+              <OutArgument x:TypeArguments="ss:SecureString" x:Key="out_Password">
+                <VisualBasicReference x:TypeArguments="ss:SecureString" ExpressionText="strPassword" />
+              </OutArgument>
             </ui:InvokeWorkflowFile.Arguments>
           </ui:InvokeWorkflowFile>
           <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="360,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="724a4228-0a5f-4522-9b45-04e4a66745de" Text="[strUsername]" Version="V3">
@@ -152,7 +159,7 @@
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
   </uix:NApplicationCard>

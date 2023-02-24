@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iWiWrzWITCGc+9YXBuFjUQze/11PqVsYxGjn5SCBn+N/Zql3vCi1BWMykIdgOfl7g36vGJgd27hnJaXv+/bFrQ==",
+  "dgSpecHash": "SX4exXO2AgQfiuQo6W7dk3iRUUgXSBB66fSiuCyYXSk18BKgBKA6eTP3b4g/Sbq4b0sPe1I5X8cIWvRkisiziA==",
   "success": true,
   "projectFilePath": "C:\\Users\\CATALOG\\Documents\\UiPath\\RPA_UdemyMarceloCruz\\Performer\\.local\\",
   "expectedPackageFiles": [
     "C:\\Users\\CATALOG\\.nuget\\packages\\automapper\\9.0.0\\automapper.9.0.0.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\closedxml\\0.95.4\\closedxml.0.95.4.nupkg.sha512",
+    "C:\\Users\\CATALOG\\.nuget\\packages\\credentialmanagement.standard\\1.0.4\\credentialmanagement.standard.1.0.4.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\csvhelper\\16.0.0\\csvhelper.16.0.0.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\documentformat.openxml\\2.12.1\\documentformat.openxml.2.12.1.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\excelnumberformat\\1.0.10\\excelnumberformat.1.0.10.nupkg.sha512",
@@ -233,6 +234,7 @@
     "C:\\Users\\CATALOG\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\uipath\\22.10.49.23\\uipath.22.10.49.23.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\uipath.activities.runtimegovernance\\1.1.6\\uipath.activities.runtimegovernance.1.1.6.nupkg.sha512",
+    "C:\\Users\\CATALOG\\.nuget\\packages\\uipath.credentials.activities\\2.0.0\\uipath.credentials.activities.2.0.0.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\uipath.excel.activities\\2.17.0-preview\\uipath.excel.activities.2.17.0-preview.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\uipath.imageprocessing\\22.4.1\\uipath.imageprocessing.22.4.1.nupkg.sha512",
     "C:\\Users\\CATALOG\\.nuget\\packages\\uipath.ocr.activities\\3.11.0\\uipath.ocr.activities.3.11.0.nupkg.sha512",
