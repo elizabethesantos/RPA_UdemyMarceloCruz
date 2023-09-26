@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,1811" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,2399" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -84,7 +84,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="766,1746" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="766,2334" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="porcentagem" />
       <Variable x:TypeArguments="x:Boolean" Default="True" Name="repeticao" />
@@ -94,28 +94,32 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: O Ômega do Imperador é um Extra Capítulo 1 - Voto Quebrado (1)" sap:VirtualizedContainerService.HintSize="704,1635" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="62017d38-0d27-4ab8-abb4-3d6a5506d666" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: O Ômega do Imperador é um Extra Capítulo 1 - Voto Quebrado (1)" sap:VirtualizedContainerService.HintSize="704,2223" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="62017d38-0d27-4ab8-abb4-3d6a5506d666" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="670,1418" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="670,2006" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[repeticao]" DisplayName="While" sap:VirtualizedContainerService.HintSize="608,1303" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="608,107" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Trace" Message="[&quot;while&quot;]" />
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[repeticao]" DisplayName="While" sap:VirtualizedContainerService.HintSize="608,1744" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
               <ui:InterruptibleWhile.Body>
-                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="572,1137" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="572,1578" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,107" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;scrooll mouse&quot;]" />
                   <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="510,137" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
-                  <Delay Duration="00:00:25" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,107" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Trace" Message="[&quot;delay&quot;]" />
+                  <Delay Duration="00:00:40" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,107" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Trace" Message="[&quot;get text&quot;]" />
                   <uix:NGetText DisplayName="Get Text '22.26%'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="62017d38-0d27-4ab8-abb4-3d6a5506d666" TextString="[porcentagem]" Version="V3">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="https://www.webnovel.com/book/the-emperor's-omega-is-an-extra_24879215006385905/club-adventures-(5)_68550384779590779" DesignTimeRectangle="583, 137, 74, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'22.26%'" FullSelectorArgument="&lt;webctrl isleaf='1' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='STRONG' type='' class='cha-hd-progress j_progress fr' /&gt;" Guid="10eedcb4-7caa-4466-bd5a-2abee5088707" InformativeScreenshot="3badbb43d8f2eedf31126bb708eb9d0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='O Ômega do Imperador é um Extra Capítulo 1 - Voto Quebrado (1)' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
