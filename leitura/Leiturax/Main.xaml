@@ -1,0 +1,171 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240,1811" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="766,1746" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="porcentagem" />
+      <Variable x:TypeArguments="x:Boolean" Default="True" Name="repeticao" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: O Ômega do Imperador é um Extra Capítulo 1 - Voto Quebrado (1)" sap:VirtualizedContainerService.HintSize="704,1635" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="Never" ScopeGuid="62017d38-0d27-4ab8-abb4-3d6a5506d666" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="670,1418" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[repeticao]" DisplayName="While" sap:VirtualizedContainerService.HintSize="608,1303" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile.Body>
+                <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="572,1137" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" sap:VirtualizedContainerService.HintSize="510,137" sap2010:WorkflowViewState.IdRef="NMouseScroll_1" InteractionMode="HardwareEvents" MovementUnits="5" Version="V3" />
+                  <Delay Duration="00:00:25" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <uix:NGetText DisplayName="Get Text '22.26%'" sap:VirtualizedContainerService.HintSize="510,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="62017d38-0d27-4ab8-abb4-3d6a5506d666" TextString="[porcentagem]" Version="V3">
+                    <uix:NGetText.Target>
+                      <uix:TargetAnchorable BrowserURL="https://www.webnovel.com/book/the-emperor's-omega-is-an-extra_24879215006385905/club-adventures-(5)_68550384779590779" DesignTimeRectangle="583, 137, 74, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'22.26%'" FullSelectorArgument="&lt;webctrl isleaf='1' tag='STRONG' /&gt;" FuzzySelectorArgument="&lt;webctrl isleaf='1' tag='STRONG' type='' class='cha-hd-progress j_progress fr' /&gt;" Guid="10eedcb4-7caa-4466-bd5a-2abee5088707" InformativeScreenshot="3badbb43d8f2eedf31126bb708eb9d0d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='O Ômega do Imperador é um Extra Capítulo 1 - Voto Quebrado (1)' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive" />
+                    </uix:NGetText.Target>
+                  </uix:NGetText>
+                  <If Condition="[porcentagem.Equals(&quot;100%&quot;)]" sap:VirtualizedContainerService.HintSize="510,522" sap2010:WorkflowViewState.IdRef="If_1">
+                    <If.Then>
+                      <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[repeticao]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[repeticao]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </ui:InterruptibleWhile.Body>
+            </ui:InterruptibleWhile>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUoSURBVFhHxVdrbxVVFJ0fwAd+hJ/8gNGkH0w0RBOjJCIgpNRawFIoldCi1SogLVDTAKJASyu0ohWxEBMTAXkq2IK0NVr7orRSQODS9+P29va+5sxjude0vdzeO+WRCN3Jysycfc5e67z2OaO52ZA3qLVdvTnr1u3epO7uwaz+gZHywaHRX70jgWbfaNAzOhryjfpDIb8/rBN8Zxl9rMO6bMO2jMFYjPlA89zt1zqu3Z7d1T20zOsdOxUIRHoiEcNQyoJh2DBNPBRYl23YljEYizEZmxwJVl/fpAHQRO0zQ8P+E+GwoT8K4YPAWIzJ2OQgFzmj1tMz5JCP+IKN/ydxPBibHOQip2PXb9zV2jtuzaa6x0k+CXKQi5zk1mThaJwfDpFbg8cBcpGT3FpzS+csWSQnn0TvJ0EucpKbc5/ElRpfSalx2PbU8kcC2+oWTJXYOXKSW+Ne5XaJdZK0tQnYuwP4+69xIbH+h4IQq0vXoOcdhaq7ASma4icnuTUmDO7ZWCet5jyw4GVg+RLg9EkO29QA94UMsaqqQzipAMGncqGONSYIICe5NWat+PmnXaoBli4EkhcAH+cCvhHAsqYGcQXrDAWhLy5B+OkNCM3ZBPVzc4IAcpJbY+qMdRC03y8BqSmCVCAvDxgeThTA7wRR/O4fg1pUjMiz+Qg/lw91MlEAQW5uQ0+8g3a5FkhbIVgpI7BZBHjvkfGpR4DeHtsB36NC+BwQAcml0JO2ICJQp1pcBZBb4yES73AE1Mv8rwGWrQU2FN4TQPT12ijbFcHqlCBWp4VQtkehr88eFzEhwEgpg3p+G3SBOtPqKoDcGk+yeAet9k9gRY7gfWCj7AbvxBqISG9LdkYw/4UxWaQBLHo1gIXzgigtVo7PETA4BjNtP9SLn0IXGGenESDcGo/TeIcjoAFIl7lP3wh8slsE+GR7SrnnXxNrF48gea4PuZkhfJCjY8mbIazJiMBzx3bqOAJWHIDxUhGUwDh3xVUAud0FSJQ6yQMZ+YJtwOYyETAq5WKdrQrZr/cjfW4/jn0bQlWVheSUCFau1NHxz6SAAMyMChivbIcSGL/cR4DrFFBAC7CqSATsBPIPjgtgghroMlCSO4DywhEcrtSRnatj6fIw3vtIobdfpmlSQOZXMObtgPHaTpjn26afAtdFKET1bUDm54K9wNbvZMWOyd4Vn2cQ+LHaRGGFhYwPDaRm6Xgn28BPVX6o28OShCSpeQOw1n4N841dsObvgnnh6vSL0HUbUkA7kFUKvFsOFPwg353AocuyI46KqC9tpBfZWL7RQPZWE0cr/bhZcAG+VZUw9p0TwjYRcBDm4t2wFn0Bq7rdVYCzDV0TkQj445qQy9CvOwysF9KcI8Bq+c7YbyNzn41NFUDVGeBKYxit2xvQsvAI7s4/AP+CvTDfKoZFpBbDTt4Dq8ZdgJOIXFMxBdwQATL02UK+TpAl7+sPAbtPAL81Sy6QzMi6lrQNdAUweLoTvVvOYvDtbxCUNEwB9rIS2Cki4GJHgoBoKnY9jCYEZArhOul5/nHg+zrp7R05RkPilpUWzXwEv6WNGlMIN3UhUl4NK6cSdpoISJZpuJg4AtHDyPU4loC3BoBSORFlC6NbsqCS09AhjqmXAIoSISY75BmGdaIB1mfHYV7vGy+PqRs9jqe7kHDFh5jj5Tmltw8LErJdyHCO53h/9EIy41cyXgxn9FI649dy2sz8mAyPk9Oe8K/ZHHLV1rZOsMfYjP2cxtuT+z3XtP8ASL0Q0zCqPucAAAAASUVORK5CYII=" InformativeScreenshot="9b48f883542e13afd13c335373b3851b.jpg" Selector="&lt;html app='chrome.exe' title='*' /&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
